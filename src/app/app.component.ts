@@ -1,3 +1,4 @@
+import * as cornerstone from 'cornerstone-core';
 import { Component } from '@angular/core';
 
 @Component({
@@ -7,4 +8,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app works!';
+
+  constructor(){this.fazer()}
+
+  public fazer(){
+    console.log(cornerstone);
+    cornerstone.removeLayer()
+    
+  }
 }
